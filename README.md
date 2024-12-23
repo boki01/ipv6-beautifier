@@ -1,4 +1,4 @@
-# IPv6 [HR]
+# [IPv6 [HR]](https://boki01.github.io/ipv6-beautifier/)
 ![Web app](https://github.com/user-attachments/assets/62dc6704-f8c8-49f8-a7d5-a778e1ac2ec4)
 
 [![en](https://img.shields.io/badge/lang-EN-red.svg)](https://github.com/boki01/ipv6-beautifier/blob/main/README.en.md)
