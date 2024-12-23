@@ -95,7 +95,7 @@ function expandIPv6(address) {
 Nakon što smo uspostavili da je IPv6 adresa ispravna, moramo osigurati da se ista nalazi u punom obliku. Znači, ako je IPv6 adresa u bilo kojem obliku skraćena potrebno ju je proširiti. To postižemo gore navedenom funkcijom.
 Ako IPv6 adresa ne sadrži dvostruki separator onda je poprilično jednostavno - razdvojimo adresu na grupe te svaku grupu dopunimo s nulama, ali ako sadrži, onda se stvari kompliciraju. 
 Tada je potrebno razdvojiti adresu na dva dijela - prije i poslije dvostrukog separatora, potom svaki dio podijeliti na grupe. Nakon što smo to napravili, potrebno je izračunati koliko grupa nedostaje (to su grupe popunjene nulama) danom formulom<br>
-`8 - (leftGroups.length + rightGroups.length)`. Poslije je opet poprilično jednostavno - svaku grupu dopunimo nulama, na mjesto dvostrukog separatora stavimo polje nula te sve spojimo s dvotočkom.
+`8 - (leftGroups.length + rightGroups.length)`. Poslije je opet poprilično jednostavno - svaku grupu dopunimo nulama, na mjesto dvostrukog separatora stavimo polje nula te sve spojimo s dvotočkama.
 
 ### Razdvajanje u grupe i pronalazak najduljeg niza nula
 
@@ -136,7 +136,7 @@ Tada je potrebno razdvojiti adresu na dva dijela - prije i poslije dvostrukog se
         }
 ```
 Nakon što zasigurno imamo cijelu adresu, podijeliti ćemo je u grupe. Zatim `for` petljom tražimo najdulji uzastopni niz nula.
-Idemo kroz grupe `for` petljom, sve dok ne naletimo do grupe koja sadrži samo nule, tada započinjemo brojati i pohranjujemo početni indeks. Brojimo sve dok slijedeće polje sadrži isključivo nule. Na kraju usporedimo broj uzastopnih grupa i pronađemo najdulji niz i njegov indeks.
+Idemo kroz grupe `for` petljom, sve dok ne naletimo do grupe koja sadrži samo nule, tada započinjemo brojati i pohranjujemo početni indeks. Brojimo sve dok slijedeća grupa sadrži isključivo nule. Na kraju usporedimo broj uzastopnih grupa i pronađemo najdulji niz i njegov indeks.
 
 ### Uklananje vodećih nula
 
