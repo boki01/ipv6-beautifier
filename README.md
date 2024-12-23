@@ -63,7 +63,7 @@ Nažalost regularni izraz ne može provjeriti je li dvostruki separator upotrije
         }
     }
 ```
-Ovaj dio koda razdvaja IPv6 adresu na dva dijela - prije i nakon dvostrukog separatora, nadalje svaki dio se dijeli na dodatne grupe, zbroj broja tih grupa mora biti manji o 7 kako bi utvrdili da dvostruki separator doista mijenja minimalno dva niza nula.
+Ovaj dio koda razdvaja IPv6 adresu na dva dijela - prije i nakon dvostrukog separatora, nadalje svaki dio se dijeli na dodatne grupe, zbroj broja tih grupa mora biti manji od 7 kako bi utvrdili da dvostruki separator doista mijenja minimalno dva niza nula.
 
 ### Proširenje adrese
 
