@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="Borna Štefan">
+
+        <title>IPv6</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="ip-address.ico">
+        <script src="main.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+
+            <label for="ipv6Input">
+                <h1 class="title">Skraćivanje IPv6 Adresa</h1>
+            </label>
+
+            <input
+                type="text"
+                name="ipv6Address"
+                id="ipv6Input"
+                class="ipv6-input"
+                placeholder="IPv6 adresa"
+                required
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="none"
+                spellcheck="false"
+            >
+
+            <button class="beautify-btn" onclick="beautify()">
+                Skrati IPv6 adresu
+            </button>
+
+            <div id="result" class="result">
+            </div>
+
+        </div>
+    </body>
+</html>
