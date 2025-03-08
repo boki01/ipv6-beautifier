@@ -65,8 +65,8 @@ function beautify() {
             // Posebni slučajevi - na početku i kraju adrese
             // Budući da smo zamjenili niz nula s praznim stringom, potrebno je dodati prazan niz na početku i/ili kraju kak bi nadolazeće spajanje stringova bilo uspješno
 
-            // npr. ako imamo ipv6 "0:0:0:0:0:0:0:0", grupe su slijedeće ["0","0","0","0","0","0","0","0"] mi smo te grupe zamjenili s [""], stoga je potrebno dodati na početku i na
-            // kraju "" kako bi dobili ["","",""] te kako bi spojeni string izgledao "::"
+            // npr. ako imamo ipv6 "0:0:0:0:0:0:0:0", grupe su slijedeće ['0','0','0','0','0','0','0','0'] mi smo te grupe zamjenili s [''], stoga je potrebno dodati na početku i na
+            // kraju '' kako bi dobili ['','',''] te kako bi spojeni string izgledao "::"
 
             if (maxZerosIndex === 0)
                 groups.unshift('');
@@ -80,7 +80,7 @@ function beautify() {
         const shortenedAddress = groups.join(':');
 
         result.innerHTML = `
-            <p>IPv6 Adresa:<br> ${expandedAddress}</p>
+            <p>IPv6 Adresa:<br>${expandedAddress}</p>
             <p>Skraćena IPv6 Adresa:<br>${shortenedAddress}</p>
         `;
 
