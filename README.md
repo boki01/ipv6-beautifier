@@ -48,7 +48,7 @@ function validateIPv6(ipv6) {
 ```
 Prije samog algoritma potrebno je provjeriti je li dana adresa valjana. To radi gore navedena funkcija pomoću regularnih izraza i malo logike. 
 Regularni izraz `const ipv6Pattern` zapravo sadrži sve potrebno za provjeru izraza same adrese, to uključuje jesu li upotrijebljene heksadecimalne znamenke, sadrži li svaka grupa maksimalno četiri heksadecimalne znamenke, jesu li grupe odvojene dvotočkom, je li upotrijebljen dvostruki separatora u izrazu, ako je - je li upotrijebljen maksimalno jedanput itd.
-Nažalost regularni izraz ne može provjeriti je li dvostruki separator upotrijebljen ispravno, zato rabimo slijedeći dio koda:
+Nažalost regularni izraz ne može provjeriti je li dvostruki separator upotrijebljen ispravno, zato rabimo sljedeći dio koda:
 ```
 // Dodatni slučaj (ako postoji "::" mora se ispravno koristiti) - provjerava "logiku"
     if (ipv6.includes("::")) {
@@ -136,7 +136,7 @@ Tada je potrebno razdvojiti adresu na dva dijela - prije i poslije dvostrukog se
         }
 ```
 Nakon što zasigurno imamo cijelu adresu, podijeliti ćemo je u grupe. Zatim `for` petljom tražimo najdulji uzastopni niz nula.
-Idemo kroz grupe `for` petljom, sve dok ne naletimo do grupe koja sadrži samo nule, tada započinjemo brojati i pohranjujemo početni indeks. Brojimo sve dok slijedeća grupa sadrži isključivo nule. Na kraju usporedimo broj uzastopnih grupa i pronađemo najdulji niz i njegov indeks.
+Idemo kroz grupe `for` petljom, sve dok ne naletimo do grupe koja sadrži samo nule, tada započinjemo brojati i pohranjujemo početni indeks. Brojimo sve dok sljedeća grupa sadrži isključivo nule. Na kraju usporedimo broj uzastopnih grupa i pronađemo najdulji niz i njegov indeks.
 
 ### Uklananje vodećih nula
 
